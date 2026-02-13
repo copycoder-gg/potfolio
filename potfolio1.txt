@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My First Portfolio</title>
+    <style>
+        /* This is where we style the page */
+        
+        body {
+            font-family: Arial, sans-serif; /* Easy to read font */
+            margin: 0;
+            background-color: #f0f0f0; /* Light gray background */
+            color: #333; /* Dark gray text is easier on eyes than black */
+        }
+
+        /* The top navigation bar */
+        header {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* Navigation links */
+        nav a {
+            color: white;
+            text-decoration: none; /* Removes the underline */
+            margin: 0 15px; /* Adds space between links */
+            font-size: 18px;
+        }
+
+        nav a:hover {
+            color: #ffcc00; /* Changes color when you mouse over */
+            text-decoration: underline;
+        }
+
+        /* The main container to keep things in the middle */
+        .container {
+            width: 80%; /* Takes up 80% of the screen width */
+            margin: auto; /* Centers the container */
+            background-color: white;
+            padding: 20px;
+        }
+
+        /* The "Hero" section (Introduction) */
+        .intro {
+            text-align: center;
+            padding: 50px 20px;
+            border-bottom: 2px solid #ddd; /* A line at the bottom */
+        }
+
+        .profile-pic {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%; /* Makes the square image a circle */
+            background-color: #ddd; /* Gray placeholder color */
+            display: inline-block;
+        }
+
+        /* Projects Section */
+        .project {
+            border: 1px solid #ccc;
+            padding: 20px;
+            margin-bottom: 20px; /* Space between projects */
+            background-color: #fff;
+            border-radius: 8px; /* Slightly rounded corners */
+        }
+
+        .btn {
+            background-color: #007BFF;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            display: inline-block;
+            margin-top: 10px;
+        }
+
+        /* Footer at the bottom */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: white;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Welcome to My Website</h1>
+        <nav>
+            <a href="#about">About Me</a>
+            <a href="#projects">My Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        
+        <div id="about" class="intro">
+            <img src="https://via.placeholder.com/150" alt="Profile Picture" class="profile-pic">
+            <h2>Hi, I am a New Developer!</h2>
+            <p>I just started learning to code HTML and CSS. This is my first responsive website project. I love building things for the web.</p>
+        </div>
+
+        <h2 id="projects" style="text-align: center;">My Work</h2>
+        
+        <div class="project">
+            <h3>Project 1: A Tribute Page</h3>
+            <p>This was the first website I made. It is a simple page dedicated to my favorite scientist.</p>
+            <a href="#" class="btn">See Project</a>
+        </div>
+
+        <div class="project">
+            <h3>Project 2: Login Form</h3>
+            <p>I practiced making forms with this project. It has email and password inputs.</p>
+            <a href="#" class="btn">See Project</a>
+        </div>
+
+        <div id="contact" style="text-align: center; padding: 40px;">
+            <h2>Contact Me</h2>
+            <p>If you want to chat, send me an email!</p>
+            <a href="mailto:email@example.com" class="btn">Email Me</a>
+        </div>
+
+    </div>
+
+    <footer>
+        <p>Made with HTML & CSS by Me.</p>
+    </footer>
+
+</body>
+</html>
